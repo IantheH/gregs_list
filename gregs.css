@@ -3,7 +3,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 0; /* Tricky: override browser default */
   padding: 80px;
 
   font-family: "Roboto", sans-serif;
@@ -31,6 +31,7 @@ nav {
   padding: 0 6px;
 }
 
+/* Tricky / Interaction not obvious and not annotated, first :hover */
 a {
   text-decoration: none;
 }
@@ -39,13 +40,13 @@ a:hover {
   text-decoration: underline;
 }
 
-.logo {
+.rl-logo {
   display: inline-block;
   border-radius: 100%;
   font-weight: 800;
 }
 
-.logo h1 {
+.rl-logo h1 {
   font-weight: normal;
   margin: 0;
   padding: 0;
@@ -77,7 +78,7 @@ a:hover {
 }
 
 .pages {
-  display: inline-block; 
+  display: inline-block; /* Tricky, this could start wrapping!  */
   font-size: 0;
   margin-bottom: 30px;
   border: 1px solid #DDDDDD;
